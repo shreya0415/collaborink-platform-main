@@ -1,0 +1,72 @@
+{
+  "name": "collaborink-backend",
+  "version": "1.0.0",
+  "description": "Team collaboration platform - Backend API",
+  "type": "module",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "test": "node --experimental-vm-modules node_modules/.bin/jest --coverage",
+    "test:watch": "node --experimental-vm-modules node_modules/.bin/jest --watch",
+    "test:ci": "node --experimental-vm-modules node_modules/.bin/jest --coverage --ci",
+    "lint": "eslint src/",
+    "lint:fix": "eslint src/ --fix",
+    "build": "npm run lint",
+    "seed": "node scripts/seed.js"
+  },
+  "keywords": [
+    "collaboration",
+    "team",
+    "workspace",
+    "real-time",
+    "chat"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "aws-sdk": "^2.1693.0",
+    "axios": "^1.16.1",
+    "bcrypt": "^6.0.0",
+    "bcryptjs": "^2.4.3",
+    "cloudinary": "^2.10.0",
+    "compression": "^1.8.1",
+    "cors": "^2.8.5",
+    "date-fns": "2.30.0",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-mongo-sanitize": "2.2.0",
+    "express-rate-limit": "7.1.5",
+    "express-session": "^1.19.0",
+    "express-validator": "7.0.0",
+    "helmet": "7.1.0",
+    "joi": "17.11.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^7.7.0",
+    "multer": "^1.4.5-lts.1",
+    "nodemailer": "^8.0.8",
+    "openai": "4.24.6",
+    "passport": "^0.7.0",
+    "passport-github2": "0.1.12",
+    "passport-google-oauth20": "^2.0.0",
+    "redis": "4.6.12",
+    "sharp": "0.32.6",
+    "socket.io": "^4.7.2",
+    "stripe": "13.11.0",
+    "uuid": "^14.0.0",
+    "winston": "3.11.0",
+    "xss": "^1.0.15"
+  },
+  "devDependencies": {
+    "eslint": "8.55.0",
+    "jest": "29.7.0",
+    "mongodb-memory-server": "^11.1.0",
+    "nodemon": "3.0.2",
+    "prettier": "3.1.1",
+    "supertest": "6.3.3"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  }
+}
